@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* police de caractère importée */
 /* PAGE HTML COMMUNE */
+
 html{
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
+    background-color: #000000;
     font-family: 'Poppins', sans-serif;
     animation: 100s infinite wallpapers;
     width: 100%; 
