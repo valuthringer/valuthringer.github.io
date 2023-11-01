@@ -1,0 +1,66 @@
+.centre_titres{
+    text-align: center;
+}
+.titre_section{
+    backdrop-filter: blur(9px);
+    border: solid white 1px;
+    border-radius: 8% 92% 12% 88% / 88% 11% 89% 12%;
+    width: 40%;
+    padding: 0 40px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    margin: auto;
+    margin-top: 70px;
+}
+.zone_expl{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    backdrop-filter: blur(35px);
+    color: white;
+    text-align: left;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+}
+.zone_expl p{
+    padding: 0;
+}
+
+.espace_bas{
+    height: 100px;
+}
+.div_btn{
+    text-align: center;
+}
+.btn{
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    background: rgb(102, 1, 1);
+    color: white;
+    margin: auto;
+    border-radius: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: solid white 0px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.95);
+    background-color: rgb(80, 0, 0);
+}
+.btn:hover{
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    transition: box-shadow 0.1s;
+}
+.btn:not(:hover){
+    transition: box-shadow 0.1s;
+}
+.btn:before{
+    content: "> ";
+}
