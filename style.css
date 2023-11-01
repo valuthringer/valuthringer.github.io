@@ -29,6 +29,16 @@ body{
 
 }
 
+.bandeau_building{
+    background-color: #053fc4;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+.bandeau_building::after{
+    content: "⚠️ Site en construction, des pages peuvent être pour le moment indisponibles...";
+}
+
 /* ############################ */
 /* BANDEAU DU HAUT - GENERAL */
 .menu-site {
