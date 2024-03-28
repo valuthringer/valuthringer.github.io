@@ -29,6 +29,10 @@ body{
 
 }
 
+/* ############################ */
+/* BANDEAU D'INFOS (MAINTENANCE, ETC) */
+
+/*
 .bandeau_building{
     background-color: #053fc4;
     color: white;
@@ -38,6 +42,9 @@ body{
 .bandeau_building::after{
     content: "⚠️ Site en construction, des pages peuvent être pour le moment indisponibles...";
 }
+*/
+
+
 
 /* ############################ */
 /* BANDEAU DU HAUT - GENERAL */
