@@ -1,3 +1,15 @@
+// Lecture de l'année actuelle sur toutes les pages
+function lectureAnneeSite() {
+    const annee = "2024";
+    document.getElementById('annee').textContent = annee;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    lectureAnneeSite();
+});
+
+
+// Fonction d'agrandissement des images
 function agrandirImage(element) {
     var modal = document.createElement("div");
     modal.className = "modal";
@@ -58,14 +70,3 @@ function agrandirImage(element) {
 
     modal.style.display = "flex";
 }
-
-
-// Lecture de l'année actuelle sur toutes les pages
-function lectureAnneeSite() {
-    const annee = "2024";
-    document.getElementById('annee').textContent = annee;
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    lectureAnneeSite();
-});
