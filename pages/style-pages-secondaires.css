@@ -62,7 +62,7 @@
     text-align: center;
     display: inline-block;
     padding: 10px;
-    background: rgb(102, 1, 1);
+    background: rgb(0, 71, 163);
     color: white;
     margin: auto;
     border-radius: 0px;
@@ -185,4 +185,52 @@ textarea {
 .envoimail{
     text-align: center;
     margin-top: 20px;
+}
+
+/* Compétences */
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.competence {
+    background-color: #ffffffd1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.competence:hover {
+    transform: translateY(-5px);
+}
+
+.competence p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Bar styling */
+.barre_competence {
+    background-color: #000;
+    border-radius: 20px;
+    height: 20px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Inner bar (progress) */
+.progress {
+    background-color: #008deb; 
+    height: 100%;
+    border-radius: 20px;
 }
