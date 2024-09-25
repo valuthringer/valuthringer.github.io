@@ -387,13 +387,13 @@ a{
         background-image: url("backgrounds/2.jpg");
     }
     50% {
-        background-image: url("backgrounds/5.jpg");
+        background-image: url("backgrounds/8.jpg");
     }
     75% {
-        background-image: url("backgrounds/4.jpg");
+        background-image: url("backgrounds/5.jpg");
     }
     100% {
-        background-image: url("backgrounds/5.jpg");
+        background-image: url("backgrounds/2.jpg");
     }
 }
 
