@@ -32,7 +32,7 @@ body{
 /* ############################ */
 /* BANDEAU D'INFOS (MAINTENANCE, ETC) */
 
-
+/*
 .bandeau_building{
     background-color: #053fc4;
     color: white;
@@ -40,11 +40,10 @@ body{
     padding: 5px 0;
 }
 .bandeau_building::after{
-    /*content: "⚠️ Site en construction, des pages peuvent être pour le moment indisponibles...";*/
     content: "🚨 Je recherche un stage de 3 mois dans le développement informatique. N'hésitez pas à me contacter ;) 🚨";
 
 }
-
+*/
 
 
 
