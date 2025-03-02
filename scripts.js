@@ -1,8 +1,10 @@
 // Lecture de l'année actuelle sur toutes les pages
 function lectureAnneeSite() {
-    const annee = "2024";
+    const options = { timeZone: 'Europe/Paris', year: 'numeric' };
+    const annee = new Intl.DateTimeFormat('fr-FR', options).format(new Date());
     document.getElementById('annee').textContent = annee;
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
     lectureAnneeSite();
