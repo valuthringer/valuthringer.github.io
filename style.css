@@ -224,6 +224,31 @@ body{
     transform: rotate(-15deg);
 }
 
+.reseaux{
+    display: block;
+}
+
+.reseaux img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    display: inline-block;
+}
+.reseaux img:active{
+    transform: scale(0.9);
+}
+#logo-insta, #logo-linkedin{
+    margin-left: 10px;
+}
+
+.link{
+    color: rgb(53, 134, 255);
+    font-weight: bold;
+}
+.link::after{
+    content:"🔗";
+}
+
 /*
 .zone_centrale img{
     width: 190px;
@@ -386,10 +411,10 @@ a{
         background-image: url("backgrounds/2.jpg");
     }
     50% {
-        background-image: url("backgrounds/8.jpg");
+        background-image: url("backgrounds/7.jpg");
     }
     75% {
-        background-image: url("backgrounds/5.jpg");
+        background-image: url("backgrounds/10.jpg");
     }
     100% {
         background-image: url("backgrounds/2.jpg");
@@ -424,3 +449,24 @@ a{
         transform: scale(1.0);
     }
 }
+
+
+/*
+@media screen and (max-width: 992px) {
+    .menu-site{
+        display: none;
+    }
+    .menu-site-mobile{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu-site{
+        display: block;
+    }
+    .menu-site-mobile{
+        display: none;
+    }
+}
+*/
