@@ -8,17 +8,31 @@ html{
     margin-top: 0px;
     background-color: #000000;
     font-family: 'Poppins', sans-serif;
-    animation: 100s infinite wallpapers;
     width: 100%; 
     height: 100%;
     padding: 0;
     /* Fond d'écran */
+    scroll-behavior: smooth;
+    /*cursor: url('./curs/select.cur'), auto;*/
+    cursor: default;
+}
+
+.background-blur::before{
+    content:"";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    animation: 100s infinite wallpapers;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    scroll-behavior: smooth;
-    cursor: url('./curs/select.cur'), auto;
+
+    filter: blur(8px); /* Applique le flou */
+    z-index: -1;
 }
 
 body{
@@ -157,14 +171,31 @@ body{
 
 /* ############################ */
 /* ZONE CENTRALE NOM + INFOS COURTES */
-.zone_centrale{
+.zone_centrale {
+    margin-top: 7%;
+    width: max-content;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+.zone_centrale:hover{
+    transform: rotate(-1deg) scale(1.1);
+    transition: transform 0.5s;
+}
+.zone_centrale:not(:hover){
+    transition: transform 2s, box-shadow 2s;
+}
+.ctr {
     text-align: center;
     display: inline-block;
-    margin-top: 10%;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     animation: 0.5s welcome;
     color: white;
 }
+
 .zone_centrale .hello{
     backdrop-filter: blur(9px);
     border: solid white 1px;
@@ -182,7 +213,7 @@ body{
 }
 .surligner::before {
     content: "";
-    background-color: #000000; /* Couleur du fond, utilisez la couleur de votre choix */
+    background: black;
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -234,8 +265,16 @@ body{
     width: 40px;
     display: inline-block;
 }
+.reseaux img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
 .reseaux img:active{
     transform: scale(0.9);
+}
+.reseaux img:not(:hover){
+    transition: transform 0.3s;
 }
 #logo-insta, #logo-linkedin{
     margin-left: 10px;
@@ -470,3 +509,47 @@ a{
     }
 }
 */
+
+
+.menu-vertical {
+    width: 50px;
+    height: auto;
+    padding: 12px 0px;
+    background-color: rgba(255, 255, 255, 0.76);
+    position: fixed;
+    left: 0;
+    top: 30%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.menu-vertical a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    transition: background 0.3s;
+}
+.menu-vertical a:hover {
+    background: #cfcfcf;
+}
+
+.menu-vertical:hover {
+    width: 90px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s, background-color 0.3s;
+}
+.menu-vertical:not(:hover) {
+    transition: width 0.3s, background-color 0.5s;
+}

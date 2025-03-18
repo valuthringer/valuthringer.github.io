@@ -5,10 +5,44 @@ function lectureAnneeSite() {
     document.getElementById('annee').textContent = annee;
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('background-blur');
     lectureAnneeSite();
+    menu_gauche();
 });
+
+
+//Menu gauche du site
+function menu_gauche(){
+    const menuDroite = document.querySelector(".menu-gauche");
+
+    const menu = document.createElement("div");
+    menu.classList.add("menu-vertical");
+    const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) || '/';
+    
+    const links = [
+        { href: "https://github.com/valuthringer", imgSrc: "/logos/logo_git_noir.png", alt: "logo-git" },
+        { href: "https://www.linkedin.com/in/valentin-luthringer/", imgSrc: "/logos/linkedin_noir.png", alt: "logo-linkedin" },
+        { href: "https://annuaire.univ-cotedazur.fr/profile?dn=uid%3D22200932%2Cou%3Detudiant%2Cou%3Dpeople%2Cdc%3Dunice%2Cdc%3Dfr", imgSrc: "/logos/logo_univcotedazur_noir.png", alt: "logo-univcotedazur" },
+        { href: "https://www.instagram.com/val.lte", imgSrc: "/logos/insta_noir.png", alt: "logo-insta" }
+    ];
+    
+    links.forEach(link => {
+        const a = document.createElement("a");
+        a.href = link.href;
+        a.target = "_blank";
+    
+        const img = document.createElement("img");
+        img.src = link.imgSrc;
+        img.alt = link.alt;
+        img.style.width = "30px";
+    
+        a.appendChild(img);
+        menu.appendChild(a);
+    });
+    
+    menuDroite.appendChild(menu);
+}
 
 
 // Fonction d'agrandissement des images
@@ -72,3 +106,4 @@ function agrandirImage(element) {
 
     modal.style.display = "flex";
 }
+
