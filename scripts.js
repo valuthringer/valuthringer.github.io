@@ -23,7 +23,7 @@ function menu_gauche(){
     const links = [
         { href: "https://github.com/valuthringer", imgSrc: "/logos/logo_git_noir.png", alt: "logo-git", title: "GitHub" },
         { href: "https://www.linkedin.com/in/valentin-luthringer/", imgSrc: "/logos/linkedin_noir.png", alt: "logo-linkedin", title: "LinkedIn" },
-        { href: "https://annuaire.univ-cotedazur.fr/profile?dn=uid%3D22200932%2Cou%3Detudiant%2Cou%3Dpeople%2Cdc%3Dunice%2Cdc%3Dfr", imgSrc: "./logos/logo_univcotedazur_noir.png", alt: "logo-univcotedazur", title: "Annuaire UCA" },
+        { href: "https://annuaire.univ-cotedazur.fr/profile?dn=uid%3D22200932%2Cou%3Detudiant%2Cou%3Dpeople%2Cdc%3Dunice%2Cdc%3Dfr", imgSrc: "/logos/logo_univcotedazur_noir.png", alt: "logo-univcotedazur", title: "Annuaire UCA" },
         { href: "https://www.instagram.com/val.lte", imgSrc: "/logos/insta_noir.png", alt: "logo-insta", title: "Instagram" },
         { href: "https://redzingradio.com/author/valentin/", imgSrc: "/logos/logo_wp_noir.png", alt: "logo-wp", title: "Articles Wordpress" },
         { href: "https://soundcloud.com/valentin-luthringer", imgSrc: "/logos/soundcloud_noir.png", alt: "logo-soundcloud", title: "SoundCloud" },
