@@ -372,6 +372,13 @@ a{
 .menu-vertical a:hover {
     background: #cfcfcf;
 }
+.menu-vertical a:hover img {
+    transform: scale(1.3) rotate(-8deg);
+    transition: transform 0.2s;
+}
+.menu-vertical a:not(:hover) img {
+    transition: transform 0.4s;
+}
 .menu-vertical:hover {
     width: 90px;
     background-color: rgb(255, 255, 255);
