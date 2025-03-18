@@ -137,6 +137,14 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
     border-radius: 2px;
 }
+.zone_expl2:hover{
+    transform: scale(1.04) rotate(-0.5deg);
+    background-color: #ffffff21;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.zone_expl2:not(:hover){
+    transition: transform 0.6s, background-color 0.6s;
+}
 
 /* Formulaire contact */
 .contact-form-container {
