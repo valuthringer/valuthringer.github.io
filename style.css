@@ -43,7 +43,7 @@ body{
 /* ############################ */
 /* BANDEAU D'INFOS (MAINTENANCE, ETC) */
 
-/*
+
 .bandeau_building{
     background-color: #053fc4;
     color: white;
@@ -51,10 +51,10 @@ body{
     padding: 5px 0;
 }
 .bandeau_building::after{
-    content: "Attention, travaux en cours ! Promis, je ne casse rien… enfin, presque. 😅🚧";
+    content: "Bienvenue sur mon portfolio ! N'hésitez pas à me contacter pour toute demande de projet 🚀";
 
 }
-*/
+
 
 /* ############################ */
 /* MENU */

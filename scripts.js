@@ -1,18 +1,15 @@
-// Lecture de l'année actuelle sur toutes les pages
-function lectureAnneeSite() {
-    const options = { timeZone: 'Europe/Paris', year: 'numeric' };
-    const annee = new Intl.DateTimeFormat('fr-FR', options).format(new Date());
-    document.getElementById('annee').textContent = annee;
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('background-blur');
     lectureAnneeSite();
     menu_gauche();
 });
 
+function lectureAnneeSite() {
+    const options = { timeZone: 'Europe/Paris', year: 'numeric' };
+    const annee = new Intl.DateTimeFormat('fr-FR', options).format(new Date());
+    document.getElementById('annee').textContent = annee;
+}
 
-//Menu gauche du site
 function menu_gauche(){
     const menuDroite = document.querySelector(".menu-gauche");
 
@@ -49,7 +46,6 @@ function menu_gauche(){
 }
 
 
-// Fonction d'agrandissement des images
 function agrandirImage(element) {
     var modal = document.createElement("div");
     modal.className = "modal";
@@ -88,7 +84,7 @@ function agrandirImage(element) {
     };
 
     img.onmousedown = function (event) {
-        event.preventDefault(); // Empêcher le comportement de glisser-déposer par défaut
+        event.preventDefault();
         isDragging = true;
         startX = event.clientX;
         startY = event.clientY;
